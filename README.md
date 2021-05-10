@@ -1,1 +1,1 @@
-# everything is now in the "masters branch" whitch includes the most up to date files and updates whitch you can find in the "commits" section.
+# everything is now in the "masters branch"(click on where it says "main" and click on "master" to get there) whitch includes the most up to date files and updates whitch you can find in the "commits" section.
