@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1 {
+	background-image: url("clouds-5368444.jpg");
+    background-size: cover;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: white;
+	font-size: 100px;
+	text-align: center;
+}
+
+footer{
+	text-align: center;
+}
+
+a {
+    align-content: center;
+}
