@@ -33,6 +33,55 @@
 </ul>
 
 <h2>This site is currently under a redesign.</h2>
+
+<style>
+#container {
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.model {
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.active {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<h2>Nissan</h2>
+
+<div id="container">
+  <div class="model active">Model 1</div>
+  <div class="model">Model 2</div>
+  <div class="model">Model 3</div>
+  <!-- Add more models as needed -->
+</div>
+
+<script>
+var models = document.getElementsByClassName('model');
+var currentIndex = 0;
+var scrollDuration = 2000;  // 2 seconds
+var pauseBetweenScrolls = 3000;  // 3 seconds
+
+setInterval(function() {
+  models[currentIndex].classList.remove('active');
+  currentIndex = (currentIndex + 1) % models.length;
+  models[currentIndex].classList.add('active');
+}, scrollDuration + pauseBetweenScrolls);
+</script>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap-4.4.1.js"></script>
